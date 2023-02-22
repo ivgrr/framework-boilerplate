@@ -1,4 +1,4 @@
-import { boot } from '../framework/';
-import { appModule } from './components/app/app.module';
+import { boot } from '@framework/index';
+import { appModule } from './app/app.module';
 
 boot(appModule);

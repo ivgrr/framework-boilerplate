@@ -35,15 +35,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      '@framework': path.resolve(__dirname, 'src/framework'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/components/app/app.component.html',
-      filename: 'components/app/app.component.html',
     }),
     new CleanWebpackPlugin(),
   ],
