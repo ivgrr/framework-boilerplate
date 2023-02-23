@@ -1,6 +1,6 @@
 import { component } from '@framework/index';
 
-export const appComponent = component({
+export const AppComponent = component({
   selector: 'root',
   template: `
   <app-header></app-header>

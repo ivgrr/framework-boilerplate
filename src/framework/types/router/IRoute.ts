@@ -1,4 +1,6 @@
+import { IComponent } from '../component/IComponent';
+
 export interface IRoute {
   path: string;
-  component: string;
+  component: IComponent;
 }
