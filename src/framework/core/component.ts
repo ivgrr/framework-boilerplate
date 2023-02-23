@@ -1,4 +1,7 @@
-export const component = (config) => {
+import { IComponent } from '../types/component/IComponent';
+import { IComponentConfig } from '../types//component/IComponentConfig';
+
+export const component = (config: IComponentConfig): IComponent => {
   const { template, selector } = config;
 
   return {
