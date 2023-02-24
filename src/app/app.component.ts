@@ -4,7 +4,8 @@ export const AppComponent = component({
   selector: 'root',
   template: `
   <app-header></app-header>
-  app.component
+  <app-author-page></app-author-page>
+  <app-home-page></app-home-page>
   <app-footer></app-footer>
   `,
 });

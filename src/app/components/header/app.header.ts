@@ -1,6 +1,10 @@
 import { component } from '@framework/index';
 
-export const appHeader = component({
+export const AppHeader = component({
   selector: 'app-header',
-  template: `<h1>HEADER</h1>`,
+  template: `
+  <span>HEADER</span>
+  <a href routeTo="/author">link to author</a>
+  <a href routeTo="/">link to home</a>
+  `,
 });

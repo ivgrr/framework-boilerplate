@@ -1,10 +1,12 @@
 import { module } from '@framework/index';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { appHeader } from './components/header/app.header';
+import { AppFooter } from './components/footer/app.footer';
+import { AppHeader } from './components/header/app.header';
+import { AuthorPageComponent } from './pages/author-page/author-page.component';
 
-export const appModule = module({
+export const AppModule = module({
   rootComponent: AppComponent,
-  components: [appHeader],
+  components: [AppHeader, AppFooter],
   routes: appRoutes,
 });
